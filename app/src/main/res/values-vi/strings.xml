@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ghi chú</string>
+    <string name="congthuc">Công thức</string>
+    <string name="default_note">Tính toán độ chênh lệch, sai số trong thí nghiệm, căn bậc hai của biểu thức phức tạp</string>
+    <string name="subject">Vật lý</string>
+    <string name="default_hint_title">Nhập tiêu đề</string>
+    <string name="default_hint_content">Nhập content hay keyword</string>
+    <string name="default_edit_details">Nhập ghi chú vào</string>
+    <string name="button_save">Lưu thay đổi</string>
+    <string name="button_create">Tạo</string>
+</resources>

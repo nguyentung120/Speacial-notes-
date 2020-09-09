@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#434343"
+    tools:context=".MainActivity"
+    android:id="@+id/main_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#8615F5"
+
+        >
+        <Button
+            android:id="@+id/btn_menu"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/menu"
+            android:fitsSystemWindows="true"
+            />
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textColor="#06FCB2"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            />
+        <Button
+            android:id="@+id/btn_setting_bar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/settings"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_marginLeft="230dp"
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:padding="5dp"
+                android:id="@+id/editText_title"
+                android:textAlignment="center"
+                android:hint="@string/default_hint_title"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_edittext"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                />
+            <EditText
+                android:padding="5dp"
+                android:id="@+id/editText_content"
+                android:textAlignment="center"
+                android:hint="@string/default_hint_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_edittext"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_tao"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="#071D8F"
+            android:text="@string/button_create"
+            android:layout_marginLeft="15dp"
+            android:layout_width="100dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button" />
+
+    </LinearLayout>
+    <Spinner
+        android:layout_marginLeft="90dp"
+        android:id="@+id/spinner"
+        tools:listitem="Chọn môn"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/custom_spinner" />
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/progress_bar"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="10dp"
+        />
+    <ImageView
+        android:id="@+id/image_empty"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:background="@mipmap/empty_npte"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/txt_empty"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empty note, Please adđ note"
+        android:textColor="#4AB39B" />
+
+    <ListView
+        android:dividerHeight="5px"
+        android:divider="#434343"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview_item"
+        android:padding="10dp"
+
+        />
+
+
+
+
+</LinearLayout>

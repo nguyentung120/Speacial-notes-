@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Note</string>
+    <string name="congthuc">Recipe</string>
+    <string name="default_note">Caculate something in here</string>
+    <string name="subject">Physics</string>
+    <string name="default_hint_title">Enter title</string>
+    <string name="default_hint_content">Enter content</string>
+    <string name="default_edit_details">Enter more details of this note</string>
+    <string name="button_save">Save</string>
+    <string name="button_create">Create</string>
+</resources>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#434343"
+    android:orientation="vertical"
+    tools:context=".them_ghichu">
+
+    <TextView
+        android:id="@+id/txt_mon"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subject"
+        android:textColor="#0FD8B9"
+        />
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="100dp"
+        android:layout_height="4dp"
+        android:background="#fff"
+        android:layout_marginLeft="30dp"
+        />
+    <EditText
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:hint="@string/default_hint_title"
+        android:id="@+id/edit_title"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edittext"
+        />
+    <EditText
+        android:padding="5dp"
+        android:id="@+id/edit_content"
+        android:textAlignment="center"
+        android:textColorHint="#0AADC9"
+        android:hint="@string/default_hint_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edittext"
+        />
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:textColorHint="#11E477"
+                android:padding="15dp"
+                android:hint="@string/default_edit_details"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@drawable/custom_edittext"
+
+                >
+
+                <EditText
+                    android:id="@+id/edit_ghichu"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:onClick="save_ghichu"
+                android:id="@+id/btn_luu"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#690D8F"
+                android:textAllCaps="false"
+                android:text="@string/button_save"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_edittext"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+<!--<TextView
+android:id="@+id/txt_mon"
+android:textStyle="bold"
+android:layout_marginLeft="30dp"
+android:layout_marginTop="20dp"
+android:textSize="30sp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Vật Lý"
+android:textColor="#0FD8B9"
+    />
+<LinearLayout
+android:layout_marginTop="5dp"
+android:layout_width="100dp"
+android:layout_height="4dp"
+android:background="#fff"
+android:layout_marginLeft="30dp"
+    />
+<EditText
+android:padding="5dp"
+android:textAlignment="center"
+android:hint="Nhập title"
+android:id="@+id/edit_title"
+android:layout_marginRight="20dp"
+android:layout_marginLeft="20dp"
+android:layout_marginTop="40dp"
+android:layout_width="match_parent"
+android:layout_height="50dp"
+android:background="@drawable/custom_edittext"
+    />
+<EditText
+android:padding="5dp"
+android:id="@+id/edit_content"
+android:textAlignment="center"
+android:textColorHint="#0AADC9"
+android:hint="Nhập content hay keyword"
+android:layout_marginRight="20dp"
+android:layout_marginLeft="20dp"
+android:layout_marginTop="40dp"
+android:layout_width="match_parent"
+android:layout_height="50dp"
+android:background="@drawable/custom_edittext"
+    />
+<ScrollView
+android:layout_marginTop="20dp"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:textColorHint="#11E477"
+        android:padding="15dp"
+        android:hint="Nhập ghi chú vào"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@drawable/custom_edittext"
+
+        >
+
+        <EditText
+            android:id="@+id/edit_ghichu"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:onClick="save_ghichu"
+        android:id="@+id/btn_luu"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#690D8F"
+        android:textAllCaps="false"
+        android:text="Lưu thay đổi"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_edittext"
+        />
+</LinearLayout>
+</ScrollView> -->
